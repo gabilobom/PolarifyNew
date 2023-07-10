@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  display: flex;
+  margin: 0%;
+  height: 2500px;
+  padding: 0;
+  width: 100%;
+  line-height: normal;
+  font-family: --font-roboto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.40) 10.42%, rgba(238, 175, 230, 0.40) 59.38%, rgba(238, 175, 230, 0.31) 99.99%, rgba(115, 3, 101, 0.40) 100%);
+  background-blend-mode: multiply;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+:root {
+  --font-roboto: Roboto;
+  --font-lobster: Lobster;
+  --font-share-tech-mono: "Share Tech Mono";
+
+  --font-size-31xl: 18px;
+  --font-size-21xl: 14px;
+  --font-size-101xl: 42px;
+  --font-size-35xl: 20px;
+  --font-size-91xl: 38px;
+  --font-size-41xl: 22px;
+
+  --color-black: #000;
+  --color-gainsboro: #d9d9d9;
+  --color-white: #fff;
+  --color-gray-100: #290024;
+  --color-gray-200: rgba(255, 255, 255, 0);
+  --color-purple-100: #730365;
+  --color-lavenderblush-100: #ffeafc;
+  --color-lavenderblush-200: #f4eef4;
+
+  --br-6xl: 12px;
+  --br-xl: 6px;
+}
+
+
+/*Navbar*/
+.navbarFixed {
+  width: auto;
+  height: 40px;
+  padding: 30px;
+  justify-content: space-around;
+}
+
+
+.navHome {
+  color: #000;
+  font-size: 18px;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.navHome:hover {
+  color: #730365;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 3px solid #730365;
+  font-style: normal;
+  line-height: normal;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  margin: 0 10%;
+  margin-top: 60px;
+  width: 70%;
+}
+
+/*tela de Cadastre-se*/
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.registerLink {
+  margin-left: 10px;
+  color: #730365;
+}
+
+.registerLink:hover {
+  text-decoration: none;
+  color: #730365;
+}
+
+.btnRegister,
+.publishButton {
+  display: inline-flex;
+  width: 90px;
+  height: 32px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  background: #730365;
+  color: #FFEAFC;
+  font-family: Roboto;
+  font-size: --font-size-21xl;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*tela de Login*/
+.loginContainer,
+.registerBox {
+  display: grid;
+  background-color: rgb(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 100%;
+  height: 500px;
+  font-size: 14px;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 60px;
+  align-items: center;
+  align-content: center;
+  justify-items: start;
+  color: #730365;
+}
+
+.loginButton {
+  display: inline-flex;
+  width: 90px;
+  height: 32px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  background: #730365;
+  color: #FFEAFC;
+  font-family: Roboto;
+  font-size: --font-size-21xl;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/*login*/
+.login {
+  position: fixed;
+  background-color: rgb(0, 0, 0, 0.05);
+  width: 200px;
+  border-radius: 6px;
+  left: 80%;
+  top: 120px;
+}
+
+.loginBox {
+  width: 200px;
+  background: #730365;
+  border-radius: 6px 6px 0 0;
+}
+
+.postBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 12%;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.containerBox {
+  display: grid;
+  flex: wrap;
+  border-radius: 12px;
+  width: 250px;
+  height: 350px;
+  background: #f1f1;
+  margin-left: 2%;
+  margin-top: 20px;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.09);
+}
+
+.imgHome {
+  width: 200px;
+  height: 220px;
+  border-radius: 6px;
+  margin: 20px 25px 5px 25px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+}
+
+.nameLogin,
+.likesPost {
+  font-size: 10px;
+  margin-top: 0px;
+  font-weight: bolder;
+}
+
+.likesPost {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.groupData input {
+  margin-top: 10px;
+}
+
+.titleAddPost {
+  width: 250px;
+  background: #730365;
+  border-radius: 6px 6px 0 0;
+  color: #FFEAFC;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.createPost {
+  position: fixed;
+  font-size: 12px;
+  background-color: rgb(0, 0, 0, 0.05);
+  width: 250px;
+  height: 340px;
+  border-radius: 6px;
+  left: 80%;
+  top: 120px;
+}
+
+.addPostData,
+input {
+  width: 200px;
+  margin-left: 10%;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.addPostData,
+label {
+  margin-bottom: 8px;
+  margin-top: 6px;
+}
+
+.publishButton {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.descriptionPost {
+  display: grid;
+}
+
+.buttonLogout,
+.galery {
+  display: inline-flex;
+  width: 90px;
+  height: 30px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+  background: #730365;
+  color: #FFEAFC;
+  font-family: Roboto;
+  font-size: --font-size-21xl;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.loginLink,
+.galery {
+  text-decoration: none;
+  color: #FFEAFC;
+  font-size: 18px;
+  border-radius: 6px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loginLink:hover,
+.galery:hover {
+  text-decoration: none;
+  color: #f4eef4;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.loginButton:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  color: #FFEAFC
+}
+
+.deletePost {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -40px;
+  margin-right: 10px;
+  margin-top: 2px;
+  color: #6d6d6d;
+}
